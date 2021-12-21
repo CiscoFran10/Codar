@@ -7,14 +7,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap');
 
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
+    max-width: 1366px;
     overflow-x: hidden;
+    margin: auto;
 }
 
 /* header starts here */
 
 .header-wrap {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     padding-top: 1%;
     justify-content: space-around;
@@ -87,7 +94,7 @@ body {
 
 
 .containers {
-    max-width: 100%;
+    max-width: 1366px;
     margin-top: 160px;
     display: flex;
     padding-left: 4em;
@@ -99,13 +106,12 @@ body {
 /* style for both images*/
 .img-box {
     width: 45%;
-    margin-left: 4em;
+    margin-left: 50px;
 }
 
 .img-box img {
     height: 23em;
     width: 25em;
-    margin-left: 3em;
 }
 
 /*.*/
@@ -117,14 +123,12 @@ body {
 
 .text-box h1 {
     font-size: 1.6em;
-    width: 100%;
     font-weight: 700;
 }
 
 .text-box p {
     color: rgb(221, 6, 6);
     font-size: 3.9em;
-    width: 100%;
     font-weight: 700;
 }
 
@@ -270,13 +274,24 @@ body {
 
 /* footer starts here */
 
+
 footer {
+    position: absolute;
     width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 40%;
+    background-color: black;
+}
+
+.footer-content {
+    width: 25%;
     display: flex;
     justify-content: space-between;
+    margin: auto;
     background-color: black;
     color: white;
-    padding: 5%;
+    padding: 3% 5%;
 }
 
 footer p {
@@ -315,10 +330,65 @@ footer p:hover {
 /* footer ends here */
 
 
+/* Media queries */
 
 
 
+@media (max-width: 375px) {
+    
+    body {
+        max-width: 375px;
+    }
 
+    /* header starts here */
+
+    .header-wrap {
+        flex-direction: column;
+    }
+
+    .logo-box {
+        font-size: 1.8em;
+        margin: 50px 0 0 180px;
+    }
+
+    .nav-box {
+        width: 700px;
+        font-size: 1.9em;
+        margin: 40px 35px auto;
+        opacity: 0.8;
+
+    }
+
+    .nav-btn {
+        display: none;
+    }
+   
+    /* header ends here */
+    
+    .containers {
+        flex-direction: column;
+        max-width: 375px;
+        padding: 0;
+    }
+
+    .img-box {
+        width: 100%;
+        background-color: aqua; 
+    }
+
+    .img-box img {
+        height: 30em;
+        width: 30em;
+    }
+
+    .text-box {
+        width: 100%;
+        background-color: aqua;
+        font-size: 2em;
+    }
+}
+    
+    
 
 
 
