@@ -41,7 +41,7 @@ body {
 
 .nav-box {
     width: 43%;
-    margin-left: 15em;
+    margin-left: 20px;
     display: flex;
 }
 
@@ -72,7 +72,7 @@ body {
 .nav-btn {
     font-size: 1.3em;
     margin: 40px 0 0 20px;
-    padding: 1%;
+    padding: 5px 20px;
     color: white;
     border: 0;
     font-weight: 600;
@@ -105,19 +105,19 @@ body {
 
 /* style for both images*/
 .img-box {
-    width: 45%;
+    width: 50%;
     margin-left: 50px;
 }
 
 .img-box img {
-    height: 23em;
-    width: 25em;
+    height: 400px;
+    width: 430px;
 }
 
 /*.*/
 
 .text-box{
-    max-width: 45%;
+    max-width: 50%;
     padding-top: 90px;
 }
 
@@ -156,9 +156,9 @@ body {
 
 
 .list-box li {
-    width: 60%;
+    width: 100%;
     height: 3em;
-    margin-left: 4.5em;
+    margin-left: 10%;
     line-height: 40px;
     list-style: none;
     font-weight: 600;
@@ -175,7 +175,7 @@ body {
     border-radius: 50%;
     height: 1em;
     width: 1em;
-    margin-right: 3%;
+    margin-right: 13px;
 }
 
 
@@ -227,14 +227,14 @@ body {
     background-color: rgb(223, 222, 222);
     border-radius: 15px;
     width: 650.4px;
-    height: 180px;
+    height: 100%;
     display: flex;
-    margin: 0 50px 130px 2em;
+    margin: 0 50px 130px 2px;
 }
 
 .circle-container {
     width: 15%;
-    padding: 1em 0 5em 1.7em;
+    padding: 20px 10px 60px 20px;
 }
 
 .circle {
@@ -245,9 +245,9 @@ body {
 }
 
 .paragraph {
-    padding: 0.3em 0.5em 1.5em 1em ;
-    width: 100%;
-    margin: 20px 0 0 1.7em;
+    padding: 0px 10px 20px 2px ;
+    width: 85%;
+    margin: 20px 0 0 40px;
 }
 
 .paragraph p {
@@ -274,34 +274,38 @@ body {
 
 /* footer starts here */
 
-
 footer {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 0;
-    height: 40%;
+    height: 300px;
     background-color: black;
 }
 
 .footer-content {
-    width: 25%;
+    width: 100%;
+    height: 300px;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     margin: auto;
-    background-color: black;
     color: white;
-    padding: 3% 5%;
+    padding: 50px 5%;
 }
 
-footer p {
+
+.footer-content p {
     padding-top: 20px;
     opacity: 0.7;
     cursor: pointer;
 }
 
-footer p:hover {
+.footer-content p:hover {
     color: rgb(221, 6, 6);
+}
+
+.footer-logo{
+    width: 20%;
 }
 
 .footer-logo h2 {
@@ -312,7 +316,7 @@ footer p:hover {
 }
 
 .footer-box {
-    width: 250px;
+    width: 20%;
     margin-top: 20px;
 }
 
@@ -332,13 +336,97 @@ footer p:hover {
 
 /* Media queries */
 
-
-
-@media (max-width: 375px) {
+@media (max-width: 1025px) {
     
-    body {
-        max-width: 375px;
+    .logo-box {
+        margin-left: 30px;
+        font-size: 1.0em;
     }
+
+    .nav-box {
+        margin-right: 10%;
+    }
+
+    .nav-box .nav-btn {
+        padding: 0 30px;
+    }
+
+    .img-box {
+        margin-left: -20px;
+    }
+
+    .text-box {
+        font-size: 0.8em;
+        margin-left: 50px;
+    }
+
+    .list-box li {
+        width: 100%;
+        font-size: 1.4em;
+    }
+
+    .paragraph {
+        margin-left: 55px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+
+    .footer-icons {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .logo-box {
+        margin-left: 30px;
+    }
+
+    .nav-box {
+        margin-right: 20%;
+        font-size: 0.9em;
+    }
+
+    .nav-box .nav-btn {
+        padding: 0 30px;
+    }
+
+    .img-box img {
+        height: 350px;
+        width: 320px;
+    }
+
+    .text-box {
+        width: 100%;
+        font-size: 0.7em;
+        padding-right: 30px;
+    }
+
+    .paragraph {
+        margin-left: 60px;
+    }
+    
+    .footer-logo {
+        width: 20%;
+    }
+
+    .footer-box {
+        width: 20%;
+    }
+}
+
+@media (max-width: 760px) {
+    displa
+}
+
+
+
+
+@media (max-width: 375px) {  /*  media == tablet(760)*/
+
 
     /* header starts here */
 
@@ -386,6 +474,8 @@ footer p:hover {
         background-color: aqua;
         font-size: 2em;
     }
+
+    
 }
     
     
